@@ -1,0 +1,56 @@
+
+
+.stats-sec {
+    background: url(../../assets/images/bg2.jpg) no-repeat center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-color: var(--bg-color);
+}
+
+.stats-sec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 38%);
+    z-index: -1;
+}
+
+.timer {
+    font-size: 46px;
+    font-weight: 600;
+    color: #fff;
+}
+
+p.count-text {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .timer {
+        font-size: 35px;
+    }
+
+    p.count-text {
+        font-size: 15px;
+    }
+
+    .counter {
+        border-right: none;
+    }
+}
+
+@media (max-width: 480px) {
+    p.count-text {
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,254 @@
+
+.light-theme {
+    --primary-color: #6f7edb;
+    --secondary-color: #ff7361;
+    --font-color: #707070;
+    --bg-color: #fff;
+    --heading-color: #060606;
+    --footer-color: #100f19;
+    --footer-cpy-color: #040a17;
+    --border-radius: 4px;
+    --border-radius-full: 15px;
+    --border-color: transparent;
+    --border-color-light: #eee;
+    --iframe-filter: grayscale(0%);
+    --bg-grey: #f4f4f4;
+    --bg-light: #fbfbfb;
+    --bg-dark-color: #fff;
+    --quote-text-color: #1d2c4c;
+    --paceholder-color-search: #111;
+    --title-color: rgb(6 6 6 / 11%);
+    --banner-image: url(./assets/images/banner.jpg);
+    --box-shadow: rgb(24 28 50 / 7%);
+}
+
+.dark-theme {
+    --primary-color: #6f7edb;
+    --secondary-color: #ff7361;
+    --font-color: #b7b7b7;
+    --bg-color: #151421;
+    --heading-color: #fdfffc;
+    --border-radius: 4px;
+    --footer-color: #100f19;
+    --footer-cpy-color: #040a17;
+    --border-color: rgba(255, 255, 255, 0.2);
+    --border-color-light: rgba(255, 255, 255, 0.2);
+    --iframe-filter: grayscale(100%);
+    --bg-grey: #100f19;
+    --bg-light: #100f19;
+    --bg-dark-color: #27282b;
+    --quote-text-color: #e6e6e6;
+    --paceholder-color-search: #fff;
+    --title-color: rgb(255 255 255 / 32%);
+    --banner-image: url(./assets/images/banner-dark.jpg);
+    --box-shadow: rgb(16 15 25);
+}
+
+.noscroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--font-color);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body a,
+button,
+.btn {
+    cursor: pointer !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.img-responsive {
+    max-width: 100%;
+    display: block;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.align-self {
+    align-self: center;
+}
+
+.align-end {
+    align-self: end;
+}
+
+button,
+input,
+select,
+label,
+li,
+span {
+    -webkit-appearance: none;
+    outline: none;
+}
+
+a,
+a:hover,
+button,
+button:hover {
+    text-decoration: none;
+    transition: .5s all;
+    -moz-transition: .5s all;
+}
+
+iframe {
+    border: none;
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    color: var(--font-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    color: var(--heading-color);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--font-color);
+}
+
+li {
+    list-style-type: none;
+}
+
+p.white {
+    color: #eee;
+}
+
+
+.btn-style {
+    padding: 12px 30px 14px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    background: var(--secondary-color);
+    border-radius: var(--border-radius);
+    border: none;
+    display: inline-block;
+}
+
+
+.btn-style-normal {
+    padding: 12px 30px 14px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--heading-color);
+    background: transparent;
+    text-decoration: underline;
+    border-radius: var(--border-radius);
+    border: none;
+    display: inline-block;
+}
+
+.btn-style:hover,
+.btn-style-normal:hover {
+    background: var(--primary-color);
+    color: #fff;
+    transition: all .25s ease-in-out;
+}
+
+.btn-style-primary {
+    padding: 0;
+    font-size: 15px;
+    color: var(--primary-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.btn-style-primary:hover {
+    color: var(--primary-color);
+}
+
+.btn-style-primary i {
+    margin-left: 3px;
+    transition: all 0.3s ease-in;
+    margin-top: 2px;
+}
+
+.btn-style-primary:hover i {
+    margin-left: 8px;
+    transition: all 0.3s ease-in;
+}
+
+.title-style {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 400;
+    position: relative;
+}
+
+.title-style span {
+    font-weight: bold;
+}
+
+.sub-para {
+    font-weight: 300;
+}
+
+.style-title {
+    z-index: 0;
+}
+
+@media all and (max-width: 768px) {
+    .title-style {
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+
+@media all and (max-width: 568px) {
+    h3.title-new {
+        font-size: 6vw;
+        top: -20px;
+    }
+
+    .title-style {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .title-style {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
+

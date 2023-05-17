@@ -1,0 +1,31 @@
+
+.improvement-sec {
+    background-color: var(--bg-color);
+}
+
+.improvement-sec .progress-info {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.improvement-sec h6.progress-tittle {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.improvement-sec h6.progress-tittle {
+    font-size: 17px;
+    color: var(--heading-color);
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.improvement-sec .progress {
+    display: flex;
+    height: 0.5em;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: var(--bg-grey);
+    border-radius: 0.25rem;
+}
+

@@ -1,0 +1,139 @@
+
+.inner-banner {
+    background: var(--banner-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.breadcrumb {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 99;
+}
+
+.breadcrumbs-custom-path li {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.breadcrumbs-custom-path li .icon {
+    font-size: 12px;
+}
+
+.breadcrumbs-custom-path a,
+.breadcrumbs-custom-path a:active {
+    color: #fff;
+    font-weight: 600;
+}
+
+.breadcrumbs-custom-path a:hover {
+    color: var(--secondary-color);
+}
+
+.breadcrumbs-custom-path {
+    display: inline-block;
+    background: var(--primary-color);
+    padding: 6px 20px 10px;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -19px;
+    margin: auto;
+    text-align: center;
+    max-width: max-content;
+}
+
+h4.inner-text-title {
+    font-size: 30px;
+    margin-top: 7em;
+    margin-bottom: 1.2em;
+}
+
+.cont-right p a {
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    h4.inner-text-title {
+        margin-top: 5em;
+    }
+}
+
+@media (max-width: 568px) {
+    h4.inner-text-title {
+        margin-top: 4em;
+        font-size: 26px;
+    }
+
+    .breadcrumbs-custom-path li {
+        font-size: 13px;
+    }
+}
+
+.contact-sec {
+    background-color: var(--bg-color);
+}
+
+.contact-block input,
+.contact-block textarea {
+    width: 100%;
+    color: var(--heading-color);
+    background: var(--bg-color);
+    font-size: 15px;
+    padding: 14px;
+    border: 1px solid var(--border-color-light);
+    outline: none;
+    margin-bottom: 16px;
+    border-radius: var(--border-radius);
+}
+
+.cont-left.text-center .icon {
+    color: var(--primary-color);
+    margin: 0 10px;
+    font-size: 26px;
+}
+
+.contact-block textarea {
+    height: 120px;
+    margin: 0 0 20px 0;
+}
+
+.contact-block input:focus,
+.contact-block textarea:focus {
+    border: 1px solid var(--primary-color);
+}
+
+.cont-details p a:hover {
+    color: var(--primary-color);
+}
+
+.cont-details h6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-bottom: 8px;
+}
+
+.map iframe {
+    -webkit-filter: var(--iframe-filter);
+    -moz-filter: var(--iframe-filter);
+    -ms-filter: var(--iframe-filter);
+    -o-filter: var(--iframe-filter);
+    filter: var(--iframe-filter);
+}
+

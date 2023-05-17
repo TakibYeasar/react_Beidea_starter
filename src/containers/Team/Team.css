@@ -1,0 +1,69 @@
+
+.team-sec {
+    background-color: var(--bg-color);
+}
+
+.team-sec .team-grids {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.social-icons-section a {
+    background: #fff;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    border-radius: 50%;
+    color: var(--primary-color);
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.social-icons-section a:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+
+.team-sec-info {
+    position: absolute;
+    bottom: -227px;
+    margin: 0;
+    background: rgb(8 8 8 / 29%);
+    padding: 20px 0;
+    transition: .5s all;
+    -moz-transition: .5s all;
+    width: 100%;
+    text-align: center;
+}
+
+.team-block-single {
+    box-shadow: 0 0.125rem 0.25rem var(--box-shadow);
+}
+
+.team-block-single:hover team-sec-info {
+    bottom: 0;
+}
+
+.team-sec h5.member a {
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.team-block-single:hover h5.member a {
+    color: var(--primary-color);
+}
+
+.team-block-single h5.member a:hover {
+    color: var(--primary-color);
+}
+
+.team-sec .team-sec-grids img {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.team-bottom-block .member a {
+    text-decoration: none;
+}

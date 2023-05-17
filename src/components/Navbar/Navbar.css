@@ -1,0 +1,221 @@
+
+.site-header {
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    display: grid;
+    align-items: center;
+    background: transparent;
+}
+
+.site-header.header-scrolled {
+    background: var(--bg-color);
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    padding: 0;
+    font-size: 38px;
+    font-weight: 400;
+    color: var(--heading-color);
+}
+
+.navbar .navbar-brand span  {
+    color: var(--secondary-color);
+    font-weight: 900;
+}
+
+.navbar-nav .nav-item {
+    padding: 0 12px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link {
+    padding: 6px 0;
+    font-size: 15px;
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+
+nav.stroke {
+    box-shadow: none;
+    border-radius: 0px;
+    padding: .5rem 1rem;
+}
+
+.navbar .responsive-menu {
+    display: none;
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+.theme-switch {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+.mode-container {
+    width: 24px;
+    height: 24px;
+    padding: 0px 0;
+    margin-left: 10px;
+}
+
+.mode-container .icon {
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1199px) {
+
+    .navbar-nav.nav_btn a {
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 0 8px;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .navbar-collapse {
+        max-height: calc(100vh - 80px);
+        overflow-y: scroll;
+    }
+
+    .navbar-nav {
+        -webkit-animation-name: none;
+        animation-name: none;
+        float: left;
+        text-align: center;
+        width: 100%;
+        background: var(--bg-color);
+        padding: 20px;
+        margin-top: 16px;
+        box-shadow: 0 6px 19px rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar-nav:last-child {
+        border: 1px solid var(--border-color);
+    }
+
+    .navbar-nav .nav-item {
+        -webkit-animation-name: none;
+        animation-name: none;
+        padding: 8px 0;
+    }
+
+    .navbar-nav .nav-link {
+        display: inline-block;
+        padding: 2px 10px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    header {
+        height: auto;
+        padding: 17px 0;
+    }
+
+    header.nav-fixed {
+        height: auto;
+        padding: 14px 0;
+    }
+
+
+    .mobile-navbar .nav-item {
+        padding: 0 12px;
+        transition: all 0.5s ease;
+        position: relative;
+    }
+
+    .mobile-navbar .nav-link {
+        padding: 6px 0;
+        font-size: 15px;
+        color: var(--heading-color);
+        font-weight: 600;
+    }
+
+    .mobile-navbar .nav-link.active,
+    .mobile-navbar .nav-link:hover {
+        color: var(--secondary-color);
+    }
+
+
+    .navbar-nav .nav-item.active .nav-link,
+    .navbar-nav .nav-link:hover {
+        color: var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);
+    }
+
+    .site-header {
+        position: relative;
+        height: 73px;
+    }
+
+    .site-header .responsive-menu {
+        display: block;
+    }
+
+    .navbar .responsive-menu {
+        margin: 0;
+        width: 34px;
+        height: 34px;
+        display: inline-block;
+        border-radius: 4px;
+        font-size: 20px;
+        line-height: 1.2em;
+        color: #fff;
+        background: var(--primary-color);
+    }
+
+    .responsive-menu .icon-close {
+        display: block;
+    }
+
+    .cont-ser-position {
+        position: absolute;
+        right: 50px;
+        top: 9px;
+    }
+
+    .navbar,
+    header.nav-fixed nav.navbar.stroke {
+        padding: 0rem;
+    }
+
+    .mode-container {
+        color: var(--heading-color);
+    }
+
+    .site-header .navbar .mobile-navbar {
+        background: var(--bg-color);
+        display: grid;
+        margin-top: 80px;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+    header.nav-fixed nav.navbar.stroke {
+        padding: 0rem;
+    }
+}
+
+
